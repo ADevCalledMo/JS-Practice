@@ -1,0 +1,11 @@
+Understand:
+- make a programme that accepts number from a prompt
+- programme cycles through number starting at 0 and ending a the inputted number 
+- programme checks if cycled number is divisable by 3, 5, or both.
+        - If not divisable by any: PRINT NUMBER.
+        - If divisable by 3 only: PRINT 'Fizz'.
+        - If Divisable by 5 only: PRINT 'Buzz'.
+        - If Divisable by both: PRINT 'FizzBuzz'
+- End programme when inputted number at the end is checked. 
+
+Plan: 
