@@ -1,11 +1,17 @@
 Understand:
-- make a programme that accepts number from a prompt
+Make a programme that accepts a number from user and return the number, 
+fizz, buzz or Fizzbuzz depending on conditions. 
+
+Plan: 
+Make a programme that accepts number from a prompt
+    - Upon loading site, prompt activated and asks for number. X
+        - WHILE input is not a number, loop prompt until number is given. X
+    - If a number, progress through application, if not a number ask for number and start again.
 - programme cycles through number starting at 0 and ending a the inputted number 
+    - Number stored in let/const is used in for loop
 - programme checks if cycled number is divisable by 3, 5, or both.
         - If not divisable by any: PRINT NUMBER.
         - If divisable by 3 only: PRINT 'Fizz'.
         - If Divisable by 5 only: PRINT 'Buzz'.
         - If Divisable by both: PRINT 'FizzBuzz'
-- End programme when inputted number at the end is checked. 
-
-Plan: 
+- End programme when inputted number at the end is checked "Thank you for playing!"
