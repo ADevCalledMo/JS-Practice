@@ -9,9 +9,9 @@ Make a programme that accepts number from a prompt
     - If a number, progress through application, if not a number ask for number and start again. X
 - programme cycles through number starting at 0 and ending a the inputted number X
     - Number stored in let/const is used in for loop X
-- programme checks if cycled number is divisable by 3, 5, or both.
-        - If not divisable by any: PRINT NUMBER.
-        - If divisable by 3 only: PRINT 'Fizz'.
-        - If Divisable by 5 only: PRINT 'Buzz'.
-        - If Divisable by both: PRINT 'FizzBuzz'
+- programme checks if cycled number is divisable by 3, 5, or both. X
+        - If not divisable by any: PRINT NUMBER. X
+        - If divisable by 3 only: PRINT 'Fizz'. X
+        - If Divisable by 5 only: PRINT 'Buzz'. X
+        - If Divisable by both: PRINT 'FizzBuzz' X
 - End programme when inputted number at the end is checked "Thank you for playing!"
