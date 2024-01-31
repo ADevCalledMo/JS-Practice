@@ -1,0 +1,6 @@
+Welcome the player to Rock Paper Scissors
+- Create a Function that randomly selects Rock Paper or Scissors (this is for the computer)
+- Create a Function that initiates the round "playRound", takes player selection and computers selection 
+    - Specify What beats what, Rock Beats Scissors ETC
+- Create variable to specify player selection
+- Create a NEW Function called Play Game, does play round 5 times
