@@ -1,9 +1,10 @@
 - Welcome the player to Rock Paper Scissors X
-- Define Rock, Paper and Scissors as lowercase strings
+- Define Rock, Paper and Scissors as lowercase strings X
 - Create a Function that randomly selects Rock Paper or Scissors (this is for the computer)
-    getComputerChoice
-- Create variable to specify player selection:
-    playerSelection a Prompt that accepts Rock roCk RoCK etc. 
+    getComputerChoice X
+- Create variable to specify player selection: X
+    playerSelection a Prompt that accepts Rock roCk RoCK etc. X
+- compare player selection to computer selection.
 - Create a Function that initiates the round "playRound", takes player selection and computers selection 
     - Specify What beats what, Rock Beats Scissors ETC
     - Return what happened "You lose / You win"
