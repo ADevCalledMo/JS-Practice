@@ -13,33 +13,44 @@ const getComputerChoice = (arr) => {
 
 const computerChoice = getComputerChoice(choices);
 
-alert(
-  "Welcome to Rock Paper Scissors! In a few seconds you will be asked to pick Rock, Paper or Scissors..."
-);
-
-let playerChoice = prompt(
-  "Please enter a number for selection: 1 - ROCK. 2 - PAPER. 3 - SCISSORS."
-);
-
-while (!/^[1-3]+$/.test(playerChoice)) {
+const getPlayerChoice = () => {
   alert(
-    "Please only insert number from 1 - 3! 1 - ROCK. 2 - PAPER. 3 - SCISSORS"
+    "Welcome to Rock Paper Scissors! In a few seconds you will be asked to pick Rock, Paper or Scissors..."
   );
-  playerChoice = prompt(
+
+  let playerChoice = prompt(
     "Please enter a number for selection: 1 - ROCK. 2 - PAPER. 3 - SCISSORS."
   );
-}
 
-if (playerChoice == 1) {
-  playerChoice = "Rock";
-}
-if (playerChoice == 2) {
-  playerChoice = "Paper";
-}
-if (playerChoice == 3) {
-  playerChoice = "Scissors";
-}
+  while (!/^[1-3]+$/.test(playerChoice)) {
+    alert(
+      "Please only insert number from 1 - 3! 1 - ROCK. 2 - PAPER. 3 - SCISSORS"
+    );
+    playerChoice = prompt(
+      "Please enter a number for selection: 1 - ROCK. 2 - PAPER. 3 - SCISSORS."
+    );
+  }
+
+  if (playerChoice == 1) {
+    playerChoice = "Rock";
+  }
+  if (playerChoice == 2) {
+    playerChoice = "Paper";
+  }
+  if (playerChoice == 3) {
+    playerChoice = "Scissors";
+  }
+
+  return playerChoice;
+};
+
+const userChoice = getPlayerChoice();
+
+// const playRound = (player, comp) => {
+//   console.log("Now starting the game...");
+//   console.log;
+// };
 
 console.log(
-  `The Computer Selection is: ${computerChoice} and the Player Selection is: ${playerChoice}`
+    computerChoice, userChoice
 );
