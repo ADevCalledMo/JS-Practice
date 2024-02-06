@@ -46,11 +46,12 @@ const getPlayerChoice = () => {
 
 const userChoice = getPlayerChoice();
 
-// const playRound = (player, comp) => {
-//   console.log("Now starting the game...");
-//   console.log;
-// };
+const playRound = (compChoice, playerChoice) => {
+    
 
-console.log(
-    computerChoice, userChoice
-);
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}`)
+
+}
+
+playRound(computerChoice, userChoice);
+

@@ -4,7 +4,8 @@
     getComputerChoice X
 - Create variable to specify player selection: X
     playerSelection a Prompt that accepts Rock roCk RoCK etc. X
-- compare player selection to computer selection.
+- compare player selection to computer selection. X
+- Put player Selection into a Function and a const
 - Create a Function that initiates the round "playRound", takes player selection and computers selection 
     - Specify What beats what, Rock Beats Scissors ETC
     - Return what happened "You lose / You win"
