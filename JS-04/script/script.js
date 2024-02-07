@@ -47,11 +47,36 @@ const getPlayerChoice = () => {
 const userChoice = getPlayerChoice();
 
 const playRound = (compChoice, playerChoice) => {
-    
+  if (compChoice === "Rock" && playerChoice === "Scissors") {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+        Rock Beats Scissors! CPU WINS!!`);
+  }
+  if (compChoice === "Paper" && playerChoice === "Rock") {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+        Paper Beats Rock! CPU WINS!!`);
+  }
+  if (compChoice === "Scissors" && playerChoice === "Paper") {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+        Scissors Beats Paper! CPU WINS!!`);
+  }
+  if (playerChoice === "Rock" && compChoice === "Scissors") {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+        Rock Beats Scissors! YOU WIN!!`);
+  }
+  if (playerChoice === "Paper" && compChoice === "Rock") {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+        Paper Beats Rock! YOU WIN!!`);
+  }
+  if (playerChoice === "Scissors" && compChoice === "Paper") {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+        Scissors Beats Paper! YOU WIN!!`);
+  }
+  if (playerChoice == compChoice) {
+    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
+    DRAW!`)
+  }
 
-    console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}`)
-
-}
+//   console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}`);
+};
 
 playRound(computerChoice, userChoice);
-
