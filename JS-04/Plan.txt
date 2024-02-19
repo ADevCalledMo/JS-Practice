@@ -10,4 +10,28 @@
     - Specify What beats what, Rock Beats Scissors ETC
     - Return what happened "You lose / You win"
 - Create a NEW Function called Play Game, does play round 5 times
+ - This function must cycle the prompt 5 times and play 5 tim
+
+Play Game Function: 
+    1. Welcome to the game ONCE
+    2. Update score after every game 
+    3. Play game 5 times (5 different CPU selections, 5 different prompts from the user.)
+    4. End with who has the highest score and congratulate. 
+
+
+const playGame = () => {
+    CL('Welcome')
+    let userScore = 0; 
+    let CPUscore = 0;
+
+    playRound(userSelection, CPUselection)
+    (in here contains fresh CPU selection, fresh user prompt and userScore++/CPUScore++ )
+    CL('Nice the current score is: {score})
+
+    repeat Play Round 5 more times. 
+    (Add Loop?)
+
+    CL('The Winner is: )
+} 
+
 

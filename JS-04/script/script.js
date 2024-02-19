@@ -1,6 +1,9 @@
 let delay = 3000;
 const choices = ["Rock", "Paper", "Scissors"];
 
+let cpuScore = 0;
+let userScore = 0;
+
 const getComputerChoice = (arr) => {
   // gets random index
   const randomIndex = Math.floor(Math.random() * arr.length);
@@ -11,7 +14,15 @@ const getComputerChoice = (arr) => {
   return item;
 };
 
-const computerChoice = getComputerChoice(choices);
+
+const startRound = () => {
+  const computerChoice = getComputerChoice(choices);
+  
+}
+
+
+
+
 
 const getPlayerChoice = () => {
   alert(
@@ -46,37 +57,50 @@ const getPlayerChoice = () => {
 
 const userChoice = getPlayerChoice();
 
+
+
+
 const playRound = (compChoice, playerChoice) => {
   if (compChoice === "Rock" && playerChoice === "Scissors") {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
         Rock Beats Scissors! CPU WINS!!`);
+        cpuScore++
   }
   if (compChoice === "Paper" && playerChoice === "Rock") {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
         Paper Beats Rock! CPU WINS!!`);
+        cpuScore++
   }
   if (compChoice === "Scissors" && playerChoice === "Paper") {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
         Scissors Beats Paper! CPU WINS!!`);
+        cpuScore++
   }
   if (playerChoice === "Rock" && compChoice === "Scissors") {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
         Rock Beats Scissors! YOU WIN!!`);
+        userScore++
   }
   if (playerChoice === "Paper" && compChoice === "Rock") {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
         Paper Beats Rock! YOU WIN!!`);
+        userScore++
   }
   if (playerChoice === "Scissors" && compChoice === "Paper") {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
         Scissors Beats Paper! YOU WIN!!`);
+        userScore++
   }
   if (playerChoice == compChoice) {
     console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}
     DRAW!`)
   }
 
+  console.log(`User: ${userScore} and CPU: ${cpuScore}`)
+
 //   console.log(`CPU CHOICE: ${compChoice}. PLAYER CHOICE: ${playerChoice}`);
 };
 
 playRound(computerChoice, userChoice);
+
+
