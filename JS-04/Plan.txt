@@ -32,6 +32,11 @@ const playGame = () => {
     (Add Loop?)
 
     CL('The Winner is: )
+    if (userScore > CPUScore {
+        return "Congratulations! You Win!"
+    } else {
+        return "Unlucky! The Computer won this time!"
+    })
 } 
 
 
